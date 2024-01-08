@@ -1,0 +1,85 @@
+set ignorecase
+set clipboard=unnamed
+set relativenumber
+set hlsearch
+set incsearch 
+
+" Set the tab width
+let s:tabwidth=4
+exec 'set tabstop='    .s:tabwidth
+exec 'set shiftwidth=' .s:tabwidth
+exec 'set softtabstop='.s:tabwidth
+
+" Vim custom commands
+nnoremap <Space>j J
+nnoremap J 5j
+nnoremap K 5k
+nnoremap <C-h> <C-w>h
+nnoremap <C-j> <C-w>j
+nnoremap <C-k> <C-w>k
+nnoremap <C-h> <C-w>h
+nnoremap <Space>' :noh<CR>
+
+" Resharper commands
+nnoremap gd :vsc ReSharper.ReSharper_GotoDeclaration<CR>
+nnoremap <Space>r :vsc ReSharper.ReSharper_Rename<CR>
+nnoremap <Space>t :vsc ReSharper.ReSharper_GotoFileMember<CR>
+nnoremap <Space>s :vsc ReSharper.ReSharper_SurroundWith<CR>
+nnoremap <Space>l :vsc ReSharper.ReSharper_LiveTemplatesInsert
+nnoremap <Space>u :vsc ReSharper.ReSharper_GotoUsage<CR>
+" nnoremap <Space>d :vsc ReSharper.ReSharper_DuplicateText<CR>
+nnoremap <Space>, :vsc ReSharper.ReSharper_GotoText<CR>
+nnoremap <Space>v :vsc ReSharper.Resharper_IntroVariable<CR>
+nnoremap <Space>m :vsc ReSharper.ReSharper_ExtractMethod<CR>
+nnoremap <Space>o :vsc ReSharper.ReSharper_Move<CR>
+nnoremap <Space><Space>t :vsc ReSharper.ReSharper_GotoType<CR>
+nnoremap <Space>tr :vsc ReSharper.ReSharper_UnitTestRunFromContext<CR>
+nnoremap <Space>td :vsc ReSharper.ReSharper_UnitTestDebugContext<CR>
+nnoremap <Space>ta :vsc ReSharper.ReSharper_UnitTestRunSolution<CR>
+nnoremap <Space>tl :vsc ReSharper.ReSharper_UnitTestSessionRepeatPreviousRun<CR>
+nnoremap <Space>tt :vsc ReSharper.ReSharper_ShowUnitTestSessions<CR>
+nnoremap <Space><Space>f :vsc Resharper.ReSharper_ShowCodeStructure<CR>
+nnoremap <Space>/ :vsc ReSharper.ReSharper_LineComment<CR>
+nnoremap ] :vsc ReSharper.ReSharper_GotoNextMember<CR>
+nnoremap [ :vsc ReSharper.ReSharper_GotoPrevMember<CR>
+
+" VS 2022 commands
+nnoremap <Space>v :vsc Edit.InsertNextMatchingCaret<CR>
+nnoremap <Space>e :vsc View.NextError<CR>
+nnoremap <Space>E :vsc View.PreviousError<CR>
+nnoremap <Space>d :vsc Edit.PeekDefinition<CR>
+nnoremap <Space>f :vsc Edit.FormatDocument<CR>
+nnoremap <Space>qk :vsc Tools.CustomizeKeyboard<CR>
+nnoremap <Space>b :vsc Build.BuildSolution<CR>
+nnoremap <Space>w :w<CR>
+nnoremap <Space><Space>e :vsc View.SolutionExplorer<CR>
+nnoremap <Space>; A;<Esc>
+nnoremap zl :so ~/.vsvimrc<CR>
+
+" PeasyMotion commands
+nnoremap <Space><Space>w Tools.InvokePeasyMotion<CR>
+nnoremap <Space><Space>y Tools.InvokePeasyMotionTextSelect<CR>
+nnoremap <Space><Space>t Tools.InvokePeasyMotionJumpToDocumentTab<CR>
+
+" " gS prefix is added for ViEmu, no use for VsVim AFAIK.
+" "VsVim and ViEmu are disabled until PeasyMotion finishes
+
+" "Whole viewport jump-to-word beginning mode:
+" nnoremap <Space><Space> gS:vsc Tools.InvokePeasyMotion<CR>
+
+" "Select text from current caret position to desired jump label (fwd and reverse directions supported)
+" nnoremap ;; gS:vsc Tools.InvokePeasyMotionTextSelect<CR>
+
+" "Jump to word beginning in current line
+" nnoremap zw gS:vsc Tools.InvokePeasyMotionLineJumpToWordBegining<CR>
+" "Jump to word ending in current line
+" nnoremap ze gS:vsc Tools.InvokePeasyMotionLineJumpToWordEnding<CR>
+
+" "Jump to any open document tab
+" nnoremap ;w gS:vsc Tools.InvokePeasyMotionJumpToDocumentTab<CR>
+
+" "Jump to line beginning:
+" nnoremap ;l gS:vsc Tools.InvokePeasyMotionJumpToLineBegining<CR>
+
+" "Two char search mode:
+" nnoremap ;c gS:vsc Tools.InvokePeasyMotionTwoCharJump<CR>
