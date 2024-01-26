@@ -26,7 +26,7 @@ nnoremap <Space>r :vsc ReSharper.ReSharper_Rename<CR>
 nnoremap <Space>t :vsc ReSharper.ReSharper_GotoFileMember<CR>
 nnoremap <Space>s :vsc ReSharper.ReSharper_SurroundWith<CR>
 nnoremap <Space>l :vsc ReSharper.ReSharper_LiveTemplatesInsert
-nnoremap <Space>u :vsc ReSharper.ReSharper_GotoUsage<CR>
+nnoremap <Space>u :vsc ReSharper.ReSharper_FindUsages<CR>
 " nnoremap <Space>d :vsc ReSharper.ReSharper_DuplicateText<CR>
 nnoremap <Space>, :vsc ReSharper.ReSharper_GotoText<CR>
 nnoremap <Space>v :vsc ReSharper.Resharper_IntroVariable<CR>
