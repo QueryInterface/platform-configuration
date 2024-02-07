@@ -25,26 +25,20 @@ RunOrBringToFront(path, process_name)
 
 ; ==================================================
 ; Shortcut for opening file in VS Code
-OpenInVSCode() {
-    document := _GetDocument()
-    selection := document.SelectedItems
-    if (selection.Count = 0) {
-        args := '"' document.Folder.Self.Path '"'
-    } else {
-        args := ''
-        loop (selection.Count) {
-            args .= ' "' selection.Item(A_Index - 1).Path '"'
-        }
-    }
-    Run(A_ComSpec ' /C code ' args, , "Hide")
+OpenCurrentSelectionInProgram(program_path) 
+{
+    selection := _GetCurrentSelection()
+    full_path := program_path ' ' selection
+    Run(full_path)
     return
 
-    _GetDocument() 
+    _GetCurrentSelection() 
     {
-        Send, ^c
-        ClipWait
-        folderPath := Clipboard
+        Send("^c")
+        ClipWait(0.1)
+        folder_path := A_Clipboard
+        return folder_path
     }
 }
 
-!.::OpenInVSCode()
+!.::OpenCurrentSelectionInProgram("C:\Users\svolkov\AppData\Local\Programs\Microsoft VS Code\Code.exe")
