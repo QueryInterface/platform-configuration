@@ -45,6 +45,26 @@
         },
         {
             "before": [
+                "<Leader>",
+                "o"
+            ],
+            "after": [
+                "o",
+                "<Esc>"
+            ]
+        },
+        {
+            "before": [
+                "<Leader>",
+                "O"
+            ],
+            "after": [
+                "O",
+                "<Esc>"
+            ]
+        },
+        {
+            "before": [
                 "K"
             ],
             "after": [
@@ -170,7 +190,7 @@
                 "p"
             ],
             "commands": [
-                "workbench.action.showCommands",
+                "workbench.action.showCommands"
             ]
         },
         {
@@ -179,7 +199,7 @@
                 "t"
             ],
             "commands": [
-                "workbench.action.gotoSymbol",
+                "workbench.action.gotoSymbol"
             ]
         },
         {
@@ -188,8 +208,18 @@
                 "/"
             ],
             "commands": [
-                "editor.action.commentLine",
+                "editor.action.commentLine"
             ]
+        },
+        {
+            "before": [
+                "<Leader>",
+                "q"
+            ],
+            "commands": [
+                "openInIntegratedTerminal"
+            ]
+        }
     ],
     "vim.sneak": true
 }
