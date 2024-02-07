@@ -25,4 +25,12 @@ Create-Hardlink-To-Config-Files -sourceConfigPath "xyplorer-settings.ini" `
 Create-Hardlink-To-Config-Files -sourceConfigPath "vs-code-settings.json" `
                                 -destinationConfigPath "$appdata\Code\User\settings.json" `
                                 -verboseMessage "Setting up VS Code configuration"
+Create-Hardlink-To-Config-Files -sourceConfigPath "autohotkey-settings.ahk" `
+                                -destinationConfigPath "C:\Users\$username\autohotkey-settings.ahk" `
+                                -verboseMessage "Setting up AutoHotKey configuration"
+Create-Hardlink-To-Config-Files -sourceConfigPath "power-toys-keyboard-mappings.json" `
+                                -destinationConfigPath "$appdata\..\Local\Microsoft\PowerToys\Keyboard Manager\default.json" `
+                                -verboseMessage "Setting up Power Toys Keyboard configuration"
+
+
 
