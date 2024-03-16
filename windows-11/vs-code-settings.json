@@ -34,192 +34,36 @@
     "http.proxy": "http://proxy-dmz.intel.com:912",
     "githubPullRequests.pullBranch": "never",
     "vim.normalModeKeyBindingsNonRecursive": [
-        {
-            "before": [
-                "J"
-            ],
-            "after": [
-                "5",
-                "j"
-            ]
-        },
-        {
-            "before": [
-                "<Leader>",
-                "o"
-            ],
-            "after": [
-                "o",
-                "<Esc>"
-            ]
-        },
-        {
-            "before": [
-                "<Leader>",
-                "O"
-            ],
-            "after": [
-                "O",
-                "<Esc>"
-            ]
-        },
-        {
-            "before": [
-                "K"
-            ],
-            "after": [
-                "5",
-                "k"
-            ]
-        },
-        {
-            "before": [
-                "<Leader>",
-                "j"
-            ],
-            "after": [
-                "J"
-            ]
-        },
-        {
-            "before": [
-                "<C-h>"
-            ],
-            "after": [
-                "<C-w>",
-                "h"
-            ]
-        },
-        {
-            "before": [
-                "<C-j>"
-            ],
-            "after": [
-                "<C-w>",
-                "j"
-            ]
-        },
-        {
-            "before": [
-                "<C-k>"
-            ],
-            "after": [
-                "<C-w>",
-                "k"
-            ]
-        },
-        {
-            "before": [
-                "<C-l>"
-            ],
-            "after": [
-                "<C-w>",
-                "l"
-            ]
-        },
-        {
-            "before": [
-                "<Leader>",
-                "t",
-                "t"
-            ],
-            "commands": [
-                ":tabnew"
-            ]
-        },
-        {
-            "before": [
-                "<Leader>",
-                "t",
-                "n"
-            ],
-            "commands": [
-                ":tabnext"
-            ]
-        },
-        {
-            "before": [
-                "<Leader>",
-                "t",
-                "p"
-            ],
-            "commands": [
-                ":tabprev"
-            ]
-        },
-        {
-            "before": [
-                "<Leader>",
-                "t",
-                "o"
-            ],
-            "commands": [
-                ":tabo"
-            ]
-        },
-        {
-            "before": [
-                "<Leader>",
-                "'"
-            ],
-            "commands": [
-                ":noh"
-            ]
-        },
-        {
-            "before": [
-                "<Leader>",
-                "w"
-            ],
-            "commands": [
-                "workbench.action.files.save"
-            ]
-        },
-        {
-            "before": [
-                "<Leader>",
-                "f"
-            ],
-            "commands": [
-                "editor.action.formatDocument"
-            ]
-        },
-        {
-            "before": [
-                "<Leader>",
-                "p"
-            ],
-            "commands": [
-                "workbench.action.showCommands"
-            ]
-        },
-        {
-            "before": [
-                "<Leader>",
-                "t"
-            ],
-            "commands": [
-                "workbench.action.gotoSymbol"
-            ]
-        },
-        {
-            "before": [
-                "<Leader>",
-                "/"
-            ],
-            "commands": [
-                "editor.action.commentLine"
-            ]
-        },
-        {
-            "before": [
-                "<Leader>",
-                "q"
-            ],
-            "commands": [
-                "openInIntegratedTerminal"
-            ]
-        }
+        { "before": [ "J" ], "after": [ "5", "j" ] },
+        { "before": [ "K" ], "after": [ "5", "k" ] },
+        { "before": [ "<C-h>" ], "after": [ "<C-w>", "h" ] },
+        { "before": [ "<C-j>" ], "after": [ "<C-w>", "j" ] },
+        { "before": [ "<C-k>" ], "after": [ "<C-w>", "k" ] },
+        { "before": [ "<C-l>" ], "after": [ "<C-w>", "l" ] },
+        { "before": [ "<A-,>" ], "commands": [ "workbench.action.navigateBack" ] },
+        { "before": [ "<A-.>" ], "commands": [ "workbench.action.navigateForward" ] },
+        { "before": [ "g", "r" ], "commands": [ "references-view.findReferences" ] },
+        { "before": [ "<Leader>", "t", "t" ], "commands": [ ":tabnew" ] },
+        { "before": [ "<Leader>", "t", "n" ], "commands": [ ":tabnext" ] },
+        { "before": [ "<Leader>", "t", "p" ], "commands": [ ":tabprev" ] },
+        { "before": [ "<Leader>", "t", "o" ], "commands": [ ":tabo" ] },
+        { "before": [ "<Leader>", "o" ], "after": [ "o", "<Esc>" ] },
+        { "before": [ "<Leader>", "O" ], "after": [ "O", "<Esc>" ] },
+        { "before": [ "<Leader>", "j" ], "after": [ "J" ] },
+        { "before": [ "<Leader>", "'" ], "commands": [ ":noh" ] },
+        { "before": [ "<Leader>", "w" ], "commands": [ "workbench.action.files.save" ] },
+        { "before": [ "<Leader>", "f" ], "commands": [ "editor.action.formatDocument" ] },
+        { "before": [ "<Leader>", "p" ], "commands": [ "workbench.action.showCommands" ] },
+        { "before": [ "<Leader>", "t" ], "commands": [ "workbench.action.gotoSymbol" ] },
+        { "before": [ "<Leader>", "/" ], "commands": [ "editor.action.commentLine" ] },
+        { "before": [ "<Leader>", "q" ], "commands": [ "openInIntegratedTerminal" ] },
+        { "before": [ "<Leader>", "`" ], "commands": [ "workbench.action.terminal.toggleTerminal" ] },
+        { "before": [ "<Leader>", "e" ], "commands": [ "workbench.view.explorer" ] },
+        { "before": [ "<Leader>", "r" ], "commands": [ "editor.action.refactor" ] },
+        { "before": [ "<Leader>", "1" ], "commands": [ "workbench.action.focusFirstEditorGroup" ] },
+        { "before": [ "<Leader>", "2" ], "commands": [ "workbench.action.focusSecondEditorGroup" ] },
+        { "before": [ "<Leader>", "r" ], "commands": [ "editor.action.rename" ] },
+        { "before": [ "<Leader>", "<Leader>", "t" ], "commands": [ "workbench.action.quickOpen" ] }
     ],
     "vim.sneak": true
 }

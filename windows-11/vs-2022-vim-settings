@@ -44,7 +44,7 @@ nnoremap ] :vsc ReSharper.ReSharper_GotoNextMember<CR>
 nnoremap [ :vsc ReSharper.ReSharper_GotoPrevMember<CR>
 
 " VS 2022 commands
-nnoremap <Space>v :vsc Edit.InsertNextMatchingCaret<CR>
+nnoremap gb :vsc Edit.InsertNextMatchingCaret<CR>
 nnoremap <Space>e :vsc View.NextError<CR>
 nnoremap <Space>E :vsc View.PreviousError<CR>
 nnoremap <Space>d :vsc Edit.PeekDefinition<CR>
@@ -52,34 +52,22 @@ nnoremap <Space>f :vsc Edit.FormatDocument<CR>
 nnoremap <Space>qk :vsc Tools.CustomizeKeyboard<CR>
 nnoremap <Space>b :vsc Build.BuildSolution<CR>
 nnoremap <Space>w :w<CR>
-nnoremap <Space><Space>e :vsc View.SolutionExplorer<CR>
+nnoremap ge :vsc View.SolutionExplorer<CR>
 nnoremap <Space>; A;<Esc>
+nnoremap <A-,> :vsc View.NavigateBackward<CR>
+nnoremap <A-.> :vsc View.NavigateForward<CR>
+nnoremap <Space>/ :vsc Edit.ToggleLineComment
 nnoremap zl :so ~/.vsvimrc<CR>
 
 " PeasyMotion commands
-nnoremap <Space><Space>w Tools.InvokePeasyMotion<CR>
-nnoremap <Space><Space>y Tools.InvokePeasyMotionTextSelect<CR>
-nnoremap <Space><Space>t Tools.InvokePeasyMotionJumpToDocumentTab<CR>
-
-" " gS prefix is added for ViEmu, no use for VsVim AFAIK.
-" "VsVim and ViEmu are disabled until PeasyMotion finishes
-
-" "Whole viewport jump-to-word beginning mode:
-" nnoremap <Space><Space> gS:vsc Tools.InvokePeasyMotion<CR>
-
-" "Select text from current caret position to desired jump label (fwd and reverse directions supported)
-" nnoremap ;; gS:vsc Tools.InvokePeasyMotionTextSelect<CR>
-
-" "Jump to word beginning in current line
-" nnoremap zw gS:vsc Tools.InvokePeasyMotionLineJumpToWordBegining<CR>
-" "Jump to word ending in current line
-" nnoremap ze gS:vsc Tools.InvokePeasyMotionLineJumpToWordEnding<CR>
-
-" "Jump to any open document tab
-" nnoremap ;w gS:vsc Tools.InvokePeasyMotionJumpToDocumentTab<CR>
-
-" "Jump to line beginning:
-" nnoremap ;l gS:vsc Tools.InvokePeasyMotionJumpToLineBegining<CR>
+" gS prefix is added for ViEmu, no use for VsVim AFAIK.
+nnoremap <Space><Space>f gS:vsc Tools.InvokePeasyMotion<CR>
+nnoremap <Space><Space>y gS:vsc Tools.InvokePeasyMotionTextSelect<CR>
+nnoremap <Space><Space>q gS:vsc Tools.InvokePeasyMotionJumpToDocumentTab<CR>
+nnoremap <Space><Space>j gS:vsc Tools.InvokePeasyMotionJumpToLineBegining<CR>
+nnoremap <Space><Space>w gS:vsc Tools.InvokePeasyMotionLineJumpToWordBegining<CR>
+nnoremap <Space><Space>e gS:vsc Tools.InvokePeasyMotionLineJumpToWordEnding<CR>
+nnoremap <Space><Space>; gS:vsc Tools.InvokePeasyMotionTextSelect<CR>
 
 " "Two char search mode:
 " nnoremap ;c gS:vsc Tools.InvokePeasyMotionTwoCharJump<CR>
