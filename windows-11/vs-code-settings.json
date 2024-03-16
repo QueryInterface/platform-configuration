@@ -16,7 +16,7 @@
     "cmake.buildDirectory": "${workspaceRoot}/_build/vs/${buildType}",
     "[python]": {
         "editor.formatOnType": true,
-        "editor.defaultFormatter": "ms-python.autopep8"
+        "editor.defaultFormatter": "ms-python.black-formatter"
     },
     "explorer.confirmDragAndDrop": false,
     "explorer.confirmDelete": false,
@@ -28,6 +28,11 @@
     "vim.handleKeys": {
         "<C-p>": false
     },
+    "liveshare.allowGuestDebugControl": true,
+    "liveshare.allowGuestTaskControl": true,
+    "liveshare.languages.allowGuestCommandControl": true,
+    "liveshare.openSharedServers": false,
+    "liveshare.publishWorkspaceInfo": true,
     "workbench.editor.enablePreview": false,
     "workbench.colorTheme": "Visual Studio Light - C++",
     "editor.lineNumbers": "relative",
