@@ -59,7 +59,7 @@
         { "before": [ "<Leader>", "w" ], "commands": [ "workbench.action.files.save" ] },
         { "before": [ "<Leader>", "f" ], "commands": [ "editor.action.formatDocument" ] },
         { "before": [ "<Leader>", "p" ], "commands": [ "workbench.action.showCommands" ] },
-        { "before": [ "<Leader>", "t" ], "commands": [ "workbench.action.gotoSymbol" ] },
+        { "before": [ "<Leader>", "g" ], "commands": [ "workbench.action.gotoSymbol" ] },
         { "before": [ "<Leader>", "/" ], "commands": [ "editor.action.commentLine" ] },
         { "before": [ "<Leader>", "q" ], "commands": [ "openInIntegratedTerminal" ] },
         { "before": [ "<Leader>", "`" ], "commands": [ "workbench.action.terminal.toggleTerminal" ] },
@@ -68,7 +68,12 @@
         { "before": [ "<Leader>", "1" ], "commands": [ "workbench.action.focusFirstEditorGroup" ] },
         { "before": [ "<Leader>", "2" ], "commands": [ "workbench.action.focusSecondEditorGroup" ] },
         { "before": [ "<Leader>", "r" ], "commands": [ "editor.action.rename" ] },
-        { "before": [ "<Leader>", "<Leader>", "t" ], "commands": [ "workbench.action.quickOpen" ] }
+        { "before": [ "<Leader>", "<Leader>", "g" ], "commands": [ "workbench.action.quickOpen" ] },
+        { "before": [ "<Leader>", "z" ], "commands": [ "workbench.panel.chat.view.copilot.focus" ] }
     ],
-    "vim.sneak": true
+    "vim.sneak": true,
+    "files.autoSave": "afterDelay",
+    "[cmake]": {
+        "editor.defaultFormatter": "cheshirekow.cmake-format"
+    }
 }

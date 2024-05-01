@@ -42,3 +42,4 @@ OpenCurrentSelectionInProgram(program_path)
 }
 
 !.::OpenCurrentSelectionInProgram("C:\Users\svolkov\AppData\Local\Programs\Microsoft VS Code\Code.exe")
+!w::Send("^{Backspace}")
