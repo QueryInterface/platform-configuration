@@ -22,6 +22,7 @@ nnoremap <Space>' :noh<CR>
 
 " Resharper commands
 nnoremap gd :vsc ReSharper.ReSharper_GotoDeclaration<CR>
+nnoremap gn :vsc ReSharper.ReSharper_NavigateTo<CR>
 nnoremap <Space>r :vsc ReSharper.ReSharper_Rename<CR>
 nnoremap <Space><Space>r :vsc ReSharper.ReSharper_RefactorThis<CR>
 nnoremap <Space>g :vsc ReSharper.ReSharper_GotoFileMember<CR>

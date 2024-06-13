@@ -44,6 +44,9 @@ function Create-HardLink-To-Config-Files {
 Create-SymbolLink-To-Config-Files -sourceConfigPath ".\vs-2022-vim-settings" `
                                 -destinationConfigPath "C:\Users\$username\.vsvimrc" `
                                 -verboseMessage "Setting up VsVim for Visual Studio"
+Create-SymbolLink-To-Config-Files -sourceConfigPath ".\vs-2022-settings.vssettings" `
+                                -destinationConfigPath "C:\Users\$username\AppData\Local\Microsoft\VisualStudio\17.0_8cb8c352\Settings\CurrentSettings.vssettings" `
+                                -verboseMessage "Setting up settings for Visual Studio 2022"
 Create-HardLink-To-Config-Files -sourceConfigPath ".\xyplorer-settings.ini" `
                                 -destinationConfigPath "$appdata\XYplorer\XYplorer.ini" `
                                 -verboseMessage "Setting up XYplorer configuration"
