@@ -1,5 +1,6 @@
 $username = $env:UserName
 $appdata = $env:AppData
+$documents = [Environment]::GetFolderPath([Environment+SpecialFolder]::MyDocuments)
 
 function Run-With-Admin-Privileges {
     if (-not ([Security.Principal.WindowsPrincipal] [Security.Principal.WindowsIdentity]::GetCurrent()).IsInRole([Security.Principal.WindowsBuiltInRole] "Administrator")) {
@@ -47,6 +48,9 @@ Create-SymbolLink-To-Config-Files -sourceConfigPath ".\vs-2022-vim-settings" `
 Create-SymbolLink-To-Config-Files -sourceConfigPath ".\vs-2022-settings.vssettings" `
                                 -destinationConfigPath "C:\Users\$username\AppData\Local\Microsoft\VisualStudio\17.0_8cb8c352\Settings\CurrentSettings.vssettings" `
                                 -verboseMessage "Setting up settings for Visual Studio 2022"
+Create-SymbolLink-To-Config-Files -sourceConfigPath ".\power-shell-config.ps1" `
+                                -destinationConfigPath "$documents\PowerShell\profile.ps1" `
+                                -verboseMessage "Setting up settings for PowerShell"
 Create-HardLink-To-Config-Files -sourceConfigPath ".\xyplorer-settings.ini" `
                                 -destinationConfigPath "$appdata\XYplorer\XYplorer.ini" `
                                 -verboseMessage "Setting up XYplorer configuration"
