@@ -1,5 +1,6 @@
 set ignorecase
 set clipboard=unnamed
+set number
 set relativenumber
 set hlsearch
 set incsearch 
@@ -26,23 +27,24 @@ nnoremap gn :vsc ReSharper.ReSharper_NavigateTo<CR>
 nnoremap <Space>r :vsc ReSharper.ReSharper_Rename<CR>
 nnoremap <Space><Space>r :vsc ReSharper.ReSharper_RefactorThis<CR>
 nnoremap <Space>g :vsc ReSharper.ReSharper_GotoFileMember<CR>
+nnoremap <Space><Space>g :vsc ReSharper.ReSharper_GotoFile<CR>
+nnoremap <Space>h :vsc ReSharper.ReSharper_GotoType<CR>
 nnoremap <Space>s :vsc ReSharper.ReSharper_ChangeSignature<CR>
 nnoremap <Space>l :vsc ReSharper.ReSharper_LiveTemplatesInsert
 nnoremap <Space>, :vsc ReSharper.ReSharper_GotoText<CR>
 nnoremap <Space>v :vsc ReSharper.Resharper_IntroVariable<CR>
 nnoremap <Space>m :vsc ReSharper.ReSharper_ExtractMethod<CR>
-nnoremap <Space><Space>g :vsc ReSharper.ReSharper_GotoType<CR>
 nnoremap <Space>tr :vsc ReSharper.ReSharper_UnitTestRunFromContext<CR>
 nnoremap <Space>td :vsc ReSharper.ReSharper_UnitTestDebugContext<CR>
 nnoremap <Space>ta :vsc ReSharper.ReSharper_UnitTestRunSolution<CR>
 nnoremap <Space>tl :vsc ReSharper.ReSharper_UnitTestSessionRepeatPreviousRun<CR>
 nnoremap <Space>tt :vsc ReSharper.ReSharper_ShowUnitTestSessions<CR>
 nnoremap <Space><Space>s :vsc Resharper.ReSharper_ShowCodeStructure<CR>
-nnoremap <Space>/ :vsc ReSharper.ReSharper_LineComment<CR>
 nnoremap ] :vsc ReSharper.ReSharper_GotoNextMember<CR>
 nnoremap [ :vsc ReSharper.ReSharper_GotoPrevMember<CR>
 
 " VS 2022 commands
+nnoremap <Space>/ :vsc Edit.CommentSelection<CR>
 nnoremap gr :vsc Edit.FindAllReferences<CR>
 nnoremap gb :vsc Edit.InsertNextMatchingCaret<CR>
 nnoremap <Space>n :vsc View.NextError<CR>
@@ -58,7 +60,7 @@ nnoremap <Space>w :w<CR>
 nnoremap <Space>e :vsc View.SolutionExplorer<CR>
 nnoremap <Space>u :vsc View.Output<CR>
 nnoremap <Space>q :vsc View.Terminal<CR>
-nnoremap <Space>z :vsc View.GitHub.Copilot.Chat<CR>
+nnoremap <Space><Space>z :vsc View.GitHub.Copilot.Chat<CR>
 nnoremap <Space>; A;<Esc>
 nnoremap <Space>o o<Esc>
 nnoremap <Space>O O<Esc>

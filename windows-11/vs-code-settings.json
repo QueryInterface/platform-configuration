@@ -34,7 +34,7 @@
     "liveshare.openSharedServers": false,
     "liveshare.publishWorkspaceInfo": true,
     "workbench.editor.enablePreview": false,
-    "workbench.colorTheme": "Visual Studio Light - C++",
+    "workbench.colorTheme": "Default Dark+",
     "editor.lineNumbers": "relative",
     "http.proxy": "http://proxy-dmz.intel.com:912",
     "githubPullRequests.pullBranch": "never",
@@ -68,8 +68,8 @@
         { "before": [ "<Leader>", "1" ], "commands": [ "workbench.action.focusFirstEditorGroup" ] },
         { "before": [ "<Leader>", "2" ], "commands": [ "workbench.action.focusSecondEditorGroup" ] },
         { "before": [ "<Leader>", "r" ], "commands": [ "editor.action.rename" ] },
-        { "before": [ "<Leader>", "<Leader>", "g" ], "commands": [ "workbench.action.quickOpen" ] },
-        { "before": [ "<Leader>", "z" ], "commands": [ "workbench.panel.chat.view.copilot.focus" ] }
+        { "before": [ "<Leader>", "h" ], "commands": [ "workbench.action.quickOpen" ] },
+        { "before": [ "<Leader>", "<Leader>", "z" ], "commands": [ "workbench.panel.chat.view.copilot.focus" ] }
     ],
     "vim.sneak": true,
     "files.autoSave": "afterDelay",
@@ -89,5 +89,22 @@
                 "args": "${command:pickArgs}"
             }
         ]
-    }
+    },
+    "[cpp]": {
+        "editor.defaultFormatter": "xaver.clang-format"
+    },
+    "github.copilot.enable": {
+        "*": false,
+        "plaintext": false,
+        "markdown": false,
+        "scminput": false
+    },
+    "cmake.pinnedCommands": [
+        "workbench.action.tasks.configureTaskRunner",
+        "workbench.action.tasks.runTask"
+    ],
+    "workbench.iconTheme": "vscode-icons",
+    "cSpell.userWords": [
+        "endfunction"
+    ]
 }
