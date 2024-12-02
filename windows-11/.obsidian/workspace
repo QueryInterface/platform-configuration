@@ -1,0 +1,144 @@
+{
+  "main": {
+    "id": "379ec25c499b107b",
+    "type": "split",
+    "children": [
+      {
+        "id": "e6caaa660d3748b9",
+        "type": "leaf",
+        "state": {
+          "type": "markdown",
+          "state": {
+            "file": "notes/GPA Validation.md",
+            "mode": "source",
+            "source": false
+          }
+        }
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "8b51ab4ddc1beb21",
+    "type": "split",
+    "children": [
+      {
+        "id": "8b61e34439ac7acd",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "7c204ccec9d05514",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {}
+            }
+          },
+          {
+            "id": "1f14e30fa30f53bd",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "cmake",
+                "matchingCase": true,
+                "explainSearch": true,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "bfcc814c635523d0",
+            "type": "leaf",
+            "state": {
+              "type": "starred",
+              "state": {}
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "right": {
+    "id": "0b041447f907a29a",
+    "type": "split",
+    "children": [
+      {
+        "id": "2eeff1bb7d7f20c1",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "1eff05dec49f1c90",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "notes/GPA Validation.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "8c575f816b62283a",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "notes/GPA Validation.md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "2c36081efb522e40",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true
+              }
+            }
+          },
+          {
+            "id": "f36ac09b6d371db6",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "notes/GPA Validation.md"
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "active": "e6caaa660d3748b9",
+  "lastOpenFiles": [
+    "education/HLD design.md",
+    "education/PublicArticles.md",
+    "daily-notes/2022-10-17.md",
+    "dev-plan/want-implement-cross-platform.md",
+    "daily-notes/2022-10-13.md",
+    "notes/cmake.md",
+    "status-reports/oct-2022.md",
+    "daily-notes/2022-09-01.md",
+    "daily-notes/2022-09-06.md",
+    "daily-notes/2022-09-08.md"
+  ]
+}

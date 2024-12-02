@@ -1,0 +1,8 @@
+{
+  "accentColor": "",
+  "baseFontSize": 15,
+  "theme": "moonstone",
+  "enabledCssSnippets": [
+    "check-box-no-strike-through"
+  ]
+}

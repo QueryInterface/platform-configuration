@@ -1,0 +1,24 @@
+{
+  "items": [
+    {
+      "type": "file",
+      "title": "nsight-aftermath",
+      "path": "work-notes/after-math/!nsight-aftermath.md"
+    },
+    {
+      "type": "file",
+      "title": "f-cross-platform-support",
+      "path": "work-notes/backlog/cross-platform-support/!f-cross-platform-support.md"
+    },
+    {
+      "type": "file",
+      "title": "nn-frozen-work",
+      "path": "work-notes/backlog/nn-frozen-work/nn-frozen-work.md"
+    },
+    {
+      "type": "file",
+      "title": "!current-to-do",
+      "path": "notes/!current-to-do.md"
+    }
+  ]
+}
