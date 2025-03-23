@@ -36,7 +36,6 @@
     "workbench.editor.enablePreview": false,
     "workbench.colorTheme": "Default Dark+",
     "editor.lineNumbers": "relative",
-    "http.proxy": "http://proxy-dmz.intel.com:912",
     "githubPullRequests.pullBranch": "never",
     "vim.normalModeKeyBindingsNonRecursive": [
         { "before": [ "J" ], "after": [ "5", "j" ] },

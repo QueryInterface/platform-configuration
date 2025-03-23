@@ -20,7 +20,7 @@ RunOrBringToFront(path, process_name)
 !2::RunOrBringToFront("C:\Program Files (x86)\Microsoft\Edge\Application\", "msedge.exe")
 !3::RunOrBringToFront("C:\Program Files\Microsoft Visual Studio\2022\Professional\Common7\IDE\", "devenv.exe")
 !4::RunOrBringToFront("C:\Users\svolkov\AppData\Local\Programs\Microsoft VS Code\", "Code.exe")
-!5::RunOrBringToFront("C:\Users\svolkov\AppData\Local\Obsidian\", "Obsidian.exe")
+!5::RunOrBringToFront("C:\Users\volko\AppData\Local\Programs\Obsidian\", "Obsidian.exe")
 !t::RunOrBringToFront("C:\Program Files\PowerShell\7\", "pwsh.exe")
 
 ; ==================================================
