@@ -44,25 +44,25 @@ function Create-HardLink-To-Config-Files {
     Write-Host "$verboseMessage... DONE"
 }
 
-Create-SymbolLink-To-Config-Files -sourceConfigPath ".\vs-2022-vim-settings" `
+Create-SymbolLink-To-Config-Files -sourceConfigPath ".\vs-2022\vs-2022-vim-settings" `
                                 -destinationConfigPath "C:\Users\$username\.vsvimrc" `
                                 -verboseMessage "Setting up VsVim for Visual Studio"
-Create-SymbolLink-To-Config-Files -sourceConfigPath ".\vs-2022-settings.vssettings" `
+Create-SymbolLink-To-Config-Files -sourceConfigPath ".\vs-2022\vs-2022-settings.vssettings" `
                                 -destinationConfigPath "C:\Users\$username\AppData\Local\Microsoft\VisualStudio\17.0_8cb8c352\Settings\CurrentSettings.vssettings" `
                                 -verboseMessage "Setting up settings for Visual Studio 2022"
-Create-SymbolLink-To-Config-Files -sourceConfigPath ".\power-shell-config.ps1" `
+Create-SymbolLink-To-Config-Files -sourceConfigPath ".\power-shell\power-shell-config.ps1" `
                                 -destinationConfigPath "$documents\PowerShell\profile.ps1" `
                                 -verboseMessage "Setting up settings for PowerShell"
-Create-HardLink-To-Config-Files -sourceConfigPath ".\xyplorer-settings.ini" `
+Create-HardLink-To-Config-Files -sourceConfigPath ".\xyplorer\xyplorer-settings.ini" `
                                 -destinationConfigPath "$appdata\XYplorer\XYplorer.ini" `
                                 -verboseMessage "Setting up XYplorer configuration"
-Create-SymbolLink-To-Config-Files -sourceConfigPath ".\vs-code-settings.json" `
+Create-SymbolLink-To-Config-Files -sourceConfigPath ".\vs-code\vs-code-settings.json" `
                                 -destinationConfigPath "$appdata\Code\User\settings.json" `
                                 -verboseMessage "Setting up VS Code configuration"
-Create-HardLink-To-Config-Files -sourceConfigPath ".\autohotkey-settings.ahk" `
+Create-HardLink-To-Config-Files -sourceConfigPath ".\auto-hotkey\autohotkey-settings.ahk" `
                                 -destinationConfigPath "C:\Users\$username\autohotkey-settings.ahk" `
                                 -verboseMessage "Setting up AutoHotKey configuration"
-Create-SymbolLink-To-Config-Files -sourceConfigPath ".\power-toys-keyboard-mappings.json" `
+Create-SymbolLink-To-Config-Files -sourceConfigPath ".\power-toys\power-toys-keyboard-mappings.json" `
                                 -destinationConfigPath "$appdata\..\Local\Microsoft\PowerToys\Keyboard Manager\default.json" `
                                 -verboseMessage "Setting up Power Toys Keyboard configuration"
 
