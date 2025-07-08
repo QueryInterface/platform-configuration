@@ -42,6 +42,9 @@ nnoremap <Space>tt :vsc ReSharper.ReSharper_ShowUnitTestSessions<CR>
 nnoremap <Space><Space>s :vsc Resharper.ReSharper_ShowCodeStructure<CR>
 nnoremap ] :vsc ReSharper.ReSharper_GotoNextMember<CR>
 nnoremap [ :vsc ReSharper.ReSharper_GotoPrevMember<CR>
+nnoremap <Space>a :vsc ReSharper.ReSharper_InspectThis<CR>
+nnoremap <Space>s :vsc Resharper.ReSharper_GotoNextHighlight<CR>
+nnoremap <Space>S :vsc Resharper.ReSharper_GotoPrevHighlight<CR>
 
 " VS 2022 commands
 nnoremap <Space>/ :vsc Edit.CommentSelection<CR>
@@ -58,6 +61,7 @@ nnoremap <Space><Space>b :vsc Build.BuildSelection<CR>
 nnoremap <Space><Space><Space>b :vsc Build.BuildSolution<CR>
 nnoremap <Space>w :w<CR>
 nnoremap <Space>e :vsc View.SolutionExplorer<CR>
+nnoremap <Space>ee :vsc View.GitWindow<CR>
 nnoremap <Space>u :vsc View.Output<CR>
 nnoremap <Space>q :vsc View.Terminal<CR>
 nnoremap <Space><Space>z :vsc View.GitHub.Copilot.Chat<CR>

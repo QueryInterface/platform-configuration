@@ -13,7 +13,7 @@
     "git.confirmSync": false,
     "cmake.configureOnOpen": false,
     "cmake.useCMakePresets": "auto",
-    "cmake.buildDirectory": "${workspaceRoot}/_build/vs/${buildType}",
+    "cmake.buildDirectory": "${workspaceRoot}/_build/vs",
     "[python]": {
         "editor.formatOnType": true,
         "editor.defaultFormatter": "ms-python.black-formatter"
@@ -69,7 +69,9 @@
         { "before": [ "<Leader>", "2" ], "commands": [ "workbench.action.focusSecondEditorGroup" ] },
         { "before": [ "<Leader>", "r" ], "commands": [ "editor.action.rename" ] },
         { "before": [ "<Leader>", "h" ], "commands": [ "workbench.action.quickOpen" ] },
-        { "before": [ "<Leader>", "<Leader>", "z" ], "commands": [ "workbench.panel.chat.view.copilot.focus" ] }
+        { "before": [ "<Leader>", "<Leader>", "z" ], "commands": [ "workbench.panel.chat.view.copilot.focus" ] },
+        { "before": [ "<Leader>", "n" ], "commands": [ "editor.action.marker.nextInFiles.error" ] },
+        { "before": [ "<Leader>", "N" ], "commands": [ "editor.action.marker.prevInFiles.error" ] }
     ],
     "vim.sneak": true,
     "files.autoSave": "afterDelay",
@@ -93,12 +95,6 @@
     "[cpp]": {
         "editor.defaultFormatter": "xaver.clang-format"
     },
-    "github.copilot.enable": {
-        "*": false,
-        "plaintext": false,
-        "markdown": false,
-        "scminput": false
-    },
     "cmake.pinnedCommands": [
         "workbench.action.tasks.configureTaskRunner",
         "workbench.action.tasks.runTask"
@@ -106,5 +102,10 @@
     "workbench.iconTheme": "vscode-icons",
     "cSpell.userWords": [
         "endfunction"
-    ]
+    ],
+    "cmake.default.buildDirectory": "${workspaceFolder}/_build/vscode",
+    "git.enableSmartCommit": true,
+    "[groovy]": {
+        "editor.defaultFormatter": "NicolasVuillamy.vscode-groovy-lint"
+    }
 }
