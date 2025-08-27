@@ -4,6 +4,7 @@ set number
 set relativenumber
 set hlsearch
 set incsearch 
+set nohlsearch
 
 " Set the tab width
 let s:tabwidth=4
@@ -60,8 +61,8 @@ nnoremap <Space>b :vsc Build.Compile<CR>
 nnoremap <Space><Space>b :vsc Build.BuildSelection<CR>
 nnoremap <Space><Space><Space>b :vsc Build.BuildSolution<CR>
 nnoremap <Space>w :w<CR>
-nnoremap <Space>e :vsc View.SolutionExplorer<CR>
-nnoremap <Space>ee :vsc View.GitWindow<CR>
+nnoremap <Space>ee :vsc View.SolutionExplorer<CR>
+nnoremap <Space>eg :vsc View.GitWindow<CR>
 nnoremap <Space>u :vsc View.Output<CR>
 nnoremap <Space>q :vsc View.Terminal<CR>
 nnoremap <Space><Space>z :vsc View.GitHub.Copilot.Chat<CR>
@@ -72,6 +73,8 @@ nnoremap <A-,> :vsc View.NavigateBackward<CR>
 nnoremap <A-.> :vsc View.NavigateForward<CR>
 nnoremap <Space>/ :vsc Edit.ToggleLineComment<CR>
 nnoremap zl :so ~/.vsvimrc<CR>
+nnoremap <Space>] :vsc Window.MovetoNextTabGroup<CR>
+nnoremap <Space>[ :vsc Window.MovetoPreviousTabGroup<CR>
 
 " PeasyMotion commands
 " gS prefix is added for ViEmu, no use for VsVim AFAIK.

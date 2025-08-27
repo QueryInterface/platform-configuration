@@ -11,7 +11,7 @@
         "*.svg": "default"
     },
     "git.confirmSync": false,
-    "cmake.configureOnOpen": false,
+    "cmake.configureOnStart": false,
     "cmake.useCMakePresets": "auto",
     "cmake.buildDirectory": "${workspaceRoot}/_build/vs",
     "[python]": {
@@ -24,7 +24,7 @@
     "cmake.configureOnEdit": false,
     "vim.easymotion": true,
     "vim.leader": "<space>",
-    "vim.hlsearch": true,
+    "vim.hlsearch": false,
     "vim.handleKeys": {
         "<C-p>": false
     },
@@ -69,8 +69,9 @@
         { "before": [ "<Leader>", "r" ], "commands": [ "editor.action.rename" ] },
         { "before": [ "<Leader>", "h" ], "commands": [ "workbench.action.quickOpen" ] },
         { "before": [ "<Leader>", "<Leader>", "z" ], "commands": [ "workbench.panel.chat.view.copilot.focus" ] },
-        { "before": [ "<Leader>", "n" ], "commands": [ "editor.action.marker.nextInFiles.error" ] },
-        { "before": [ "<Leader>", "N" ], "commands": [ "editor.action.marker.prevInFiles.error" ] }
+        { "before": [ "<Leader>", "n" ], "commands": [ "go-to-next-error.nextInFiles.warning"] },
+        { "before": [ "<Leader>", "N" ], "commands": [ "go-to-next-error.prevInFiles.warning"] },
+        { "before": [ "<Leader>", "s" ], "commands": [ "editor.action.marker.next"] }
     ],
     "vim.sneak": true,
     "files.autoSave": "afterDelay",
@@ -87,7 +88,8 @@
                 "request": "launch",
                 "program": "${file}",
                 "console": "integratedTerminal",
-                "args": "${command:pickArgs}"
+                "args": "${command:pickArgs}",
+                "justMyCode": true
             }
         ]
     },
@@ -106,5 +108,23 @@
     "git.enableSmartCommit": true,
     "[groovy]": {
         "editor.defaultFormatter": "NicolasVuillamy.vscode-groovy-lint"
-    }
+    },
+    "http.noProxy": [
+        ""
+    ],
+    "http.proxy": "http://proxy-chain.intel.com:912",
+    "cmake.configureOnStart": false,
+    "cmake.configureOnOpen": false,
+    "[yaml]": {
+        "editor.defaultFormatter": "redhat.vscode-yaml"
+    },
+    "[json]": {
+        "editor.defaultFormatter": "vscode.json-language-features"
+    },
+    "redhat.telemetry.enabled": true,
+    "github.copilot.nextEditSuggestions.enabled": true,
+    "black-formatter.args": [
+        "--line-length",
+        "100"
+    ]
 }
