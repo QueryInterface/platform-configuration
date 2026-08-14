@@ -16,11 +16,14 @@
     "cmake.buildDirectory": "${workspaceRoot}/_build/vs",
     "[python]": {
         "editor.formatOnType": true,
-        "editor.defaultFormatter": "ms-python.black-formatter"
+        "editor.defaultFormatter": "charliermarsh.ruff"
     },
     "explorer.confirmDragAndDrop": false,
     "explorer.confirmDelete": false,
     "editor.accessibilitySupport": "off",
+    "editor.tabSize": 4,
+    "editor.insertSpaces": true,
+    "editor.detectIndentation": false,
     "cmake.configureOnEdit": false,
     "vim.easymotion": true,
     "vim.leader": "<space>",
@@ -28,13 +31,21 @@
     "vim.handleKeys": {
         "<C-p>": false
     },
+    "remote.extensionKind": {
+        "GitHub.copilot": [
+            "workspace"
+        ],
+        "GitHub.copilot-chat": [
+            "workspace"
+        ]
+    },
     "liveshare.allowGuestDebugControl": true,
     "liveshare.allowGuestTaskControl": true,
     "liveshare.languages.allowGuestCommandControl": true,
     "liveshare.openSharedServers": false,
     "liveshare.publishWorkspaceInfo": true,
     "workbench.editor.enablePreview": false,
-    "workbench.colorTheme": "Default Dark+",
+    "workbench.colorTheme": "Dark+",
     "editor.lineNumbers": "relative",
     "githubPullRequests.pullBranch": "never",
     "vim.normalModeKeyBindingsNonRecursive": [
@@ -63,20 +74,21 @@
         { "before": [ "<Leader>", "q" ], "commands": [ "openInIntegratedTerminal" ] },
         { "before": [ "<Leader>", "`" ], "commands": [ "workbench.action.terminal.toggleTerminal" ] },
         { "before": [ "<Leader>", "e" ], "commands": [ "workbench.view.explorer" ] },
+        { "before": [ "<Leader>", "E" ], "commands": [ "workbench.view.git" ] },
         { "before": [ "<Leader>", "r" ], "commands": [ "editor.action.refactor" ] },
         { "before": [ "<Leader>", "1" ], "commands": [ "workbench.action.focusFirstEditorGroup" ] },
         { "before": [ "<Leader>", "2" ], "commands": [ "workbench.action.focusSecondEditorGroup" ] },
         { "before": [ "<Leader>", "r" ], "commands": [ "editor.action.rename" ] },
         { "before": [ "<Leader>", "h" ], "commands": [ "workbench.action.quickOpen" ] },
         { "before": [ "<Leader>", "<Leader>", "z" ], "commands": [ "workbench.panel.chat.view.copilot.focus" ] },
-        { "before": [ "<Leader>", "n" ], "commands": [ "go-to-next-error.nextInFiles.warning"] },
-        { "before": [ "<Leader>", "N" ], "commands": [ "go-to-next-error.prevInFiles.warning"] },
-        { "before": [ "<Leader>", "s" ], "commands": [ "editor.action.marker.next"] }
+        { "before": [ "<Leader>", "n" ], "commands": [ "go-to-next-error.nextInFiles.warning" ] },
+        { "before": [ "<Leader>", "N" ], "commands": [ "go-to-next-error.prevInFiles.warning" ] },
+        { "before": [ "<Leader>", "s" ], "commands": [ "editor.action.marker.next" ] },
     ],
     "vim.sneak": true,
     "files.autoSave": "afterDelay",
     "[cmake]": {
-        "editor.defaultFormatter": "cheshirekow.cmake-format"
+        "editor.defaultFormatter": "loopj.vscode-gersemi"
     },
     "git.allowForcePush": true,
     "launch": {
@@ -101,9 +113,6 @@
         "workbench.action.tasks.runTask"
     ],
     "workbench.iconTheme": "vscode-icons",
-    "cSpell.userWords": [
-        "endfunction"
-    ],
     "cmake.default.buildDirectory": "${workspaceFolder}/_build/vscode",
     "git.enableSmartCommit": true,
     "[groovy]": {
@@ -112,7 +121,6 @@
     "http.noProxy": [
         ""
     ],
-    "http.proxy": "http://proxy-chain.intel.com:912",
     "cmake.configureOnStart": false,
     "cmake.configureOnOpen": false,
     "[yaml]": {
@@ -126,5 +134,112 @@
     "black-formatter.args": [
         "--line-length",
         "100"
+    ],
+    "pasteImage.path": "${currentFileDir}/assets/${currentFileNameWithoutExt}",
+    "dailyNotes.filePath": "C:/Users/svolkov/OneDrive - Advanced Micro Devices Inc/Documents/zettelkasten/daily-notes/daily-note.md",
+    "editor.tokenColorCustomizations": {
+        "[*Light*]": {
+            "textMateRules": [
+                {
+                    "scope": "ref.matchtext",
+                    "settings": {
+                        "foreground": "#000"
+                    }
+                }
+            ]
+        },
+        "[*Dark*]": {
+            "textMateRules": [
+                {
+                    "scope": "ref.matchtext",
+                    "settings": {
+                        "foreground": "#fff"
+                    }
+                }
+            ]
+        },
+        "textMateRules": [
+            {
+                "scope": "text.notes.info",
+                "settings": {
+                    "foreground": "#17a2b8",
+                    "fontStyle": "bold"
+                }
+            },
+            {
+                "scope": "text.notes.success",
+                "settings": {
+                    "foreground": "#28a745",
+                    "fontStyle": "bold"
+                }
+            },
+            {
+                "scope": "text.notes.warning",
+                "settings": {
+                    "foreground": "#ffc107",
+                    "fontStyle": "bold"
+                }
+            },
+            {
+                "scope": "text.notes.danger",
+                "settings": {
+                    "foreground": "#dc3545",
+                    "fontStyle": "bold"
+                }
+            }
+        ]
+    },
+    "remote.SSH.remotePlatform": {
+        "ctr2-mlse-smc-alola-s96-19": "linux",
+        "ctr-cx63-mi300x-21": "linux",
+        "personal-remote": "linux",
+        "asrock-1w300-f0-1.adc.amd.com": "linux",
+        "cv350-ccs-aus-h14-08.adc.amd.com": "linux",
+        "ctr-cx63-mi300x-12.adc.amd.com": "linux",
+        "quanta-ccs-aus-e15-19.adc.amd.com": "linux",
+        "quanta-ccs-aus-j02-45.adc.amd.com": "linux",
+        "asrock-1w300-f1-1": "linux"
+    },
+    "win-ca.inject": "append",
+    "git.openRepositoryInParentFolders": "always",
+    "github.copilot.enable": {
+        "*": false,
+        "plaintext": false,
+        "markdown": false,
+        "scminput": false,
+        "cpp": true
+    },
+    "chat.mcp.discovery.enabled": {
+        "cursor-workspace": true,
+        "cursor-global": true
+    },
+    "claudeCode.preferredLocation": "panel",
+    "claudeCode.disableLoginPrompt": true,
+    "explorer.fileNesting.patterns": {
+        "*.ts": "${capture}.js",
+        "*.js": "${capture}.js.map, ${capture}.min.js, ${capture}.d.ts",
+        "*.jsx": "${capture}.js",
+        "*.tsx": "${capture}.ts",
+        "tsconfig.json": "tsconfig.*.json",
+        "package.json": "package-lock.json, yarn.lock, pnpm-lock.yaml, bun.lockb, bun.lock",
+        "*.sqlite": "${capture}.${extname}-*",
+        "*.db": "${capture}.${extname}-*",
+        "*.sqlite3": "${capture}.${extname}-*",
+        "*.db3": "${capture}.${extname}-*",
+        "*.sdb": "${capture}.${extname}-*",
+        "*.s3db": "${capture}.${extname}-*"
+    },
+    "python.analysis.typeCheckingMode": "standard",
+    "python.testing.pytestEnabled": true,
+    "editor.largeFileOptimizations": false,
+    "telemetry.feedback.enabled": false,
+    "chat.viewSessions.orientation": "stacked",
+    "yaml.disableSchemaDetection": [
+        "**/.github/workflows/*.yml",
+        "**/.github/workflows/*.yaml",
+        "**/.gitea/workflows/*.yml",
+        "**/.gitea/workflows/*.yaml",
+        "**/.forgejo/workflows/*.yml",
+        "**/.forgejo/workflows/*.yaml"
     ]
 }
